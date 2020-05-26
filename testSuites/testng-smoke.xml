@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Automationpractice.com UI Smoke Tests" verbose="1" configfailurepolicy="continue">
+    <listeners>
+        <listener class-name="com.listeners.ScreenshotListener"/>
+    </listeners>
+    <test name="Automationpractice.com Smoke Suite">
+        <classes>
+            <class name="com.automationpractice.MainPageTest"></class>
+            <class name="com.automationpractice.LoginPageTest">
+                <methods>
+                    <include name="registeredUserLogsInTest"/>
+                </methods>
+            </class>
+            <class name="com.automationpractice.CatalogPageTest">
+                <methods>
+                    <include name="catalogPageIsOpenedTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

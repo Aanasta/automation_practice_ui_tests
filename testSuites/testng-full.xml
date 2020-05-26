@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Automationpractice.com UI Tests" verbose="1" configfailurepolicy="continue">
+    <listeners>
+        <listener class-name="com.listeners.ScreenshotListener"/>
+    </listeners>
+    <test name="Automationpractice.com Regression Suite">
+        <packages>
+            <package name="com.automationpractice"/>
+        </packages>
+    </test>
+</suite>
